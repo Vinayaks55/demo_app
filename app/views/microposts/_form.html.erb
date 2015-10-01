@@ -1,4 +1,5 @@
-<%= form_for(@micropost) do |f| %>
+<body style="background-color:yellow">
+<%= form_for(@micropost , :html => { :style => 'background-color:red;'  })  do |f| %>
   <% if @micropost.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
@@ -13,7 +14,7 @@
 
   <div class="field">
     <%= f.label :content %><br>
-    <%= f.text_field :content %>
+    <%= f.text_area :content, placeholder: "140 characters only!!!" %>
   </div>
   <div class="field">
     <%= f.label :user_id %><br>
