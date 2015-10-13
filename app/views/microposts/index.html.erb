@@ -1,12 +1,11 @@
-
+<body>
 <p id="notice"><%= notice %></p>
-
-<h1 style="color:red;">Listing Microposts</h1> 
+<h1 align="center"style="color:red;">Listing Microposts</h1> 
 <br/>
 <br/>
 
 
-<table border="2" style="width:50%; background-color:Moccasin; ">
+<table border="1"  align="center"style="width:50%; background-color:Moccasin; border-collapse:collapse; border:5px solid black;">
   <thead>
     <tr>
       <th>Content</th>
@@ -27,7 +26,6 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Micropost', new_micropost_path %>
